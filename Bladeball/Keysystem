@@ -90,7 +90,7 @@ GetKey.MouseButton1Click:Connect(function()
 end)
 
 local function validateKey(key)
-    return key == "ball.BrickColorball.CFrame" -- Replace this with your key
+    return key == "HubKey28" -- Replace this with your key
 end
 
 CheckKey.MouseButton1Click:Connect(function()
