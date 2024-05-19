@@ -86,11 +86,11 @@ CheckKeyCorner.CornerRadius = UDim.new(0, 5)
 CheckKeyCorner.Parent = CheckKey
 
 GetKey.MouseButton1Click:Connect(function()
-   setclipboard("Your Way How To Get The Key")
+   setclipboard("https://link-target.net/1177988/sumitscripts-hub-key")
 end)
 
 local function validateKey(key)
-    return key == "Key" -- Replace this with your key
+    return key == "ball.BrickColorball.CFrame" -- Replace this with your key
 end
 
 CheckKey.MouseButton1Click:Connect(function()
@@ -102,8 +102,7 @@ CheckKey.MouseButton1Click:Connect(function()
         ScreenGui:Destroy()
 
 -- Put Your Script Here
-loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SumitScripts/SumitScripts-hub/main/Bladeball/Y'))()
     else
         TextBox.PlaceholderText = "Invalid key. Try again."
         TextBox.Text = ""
