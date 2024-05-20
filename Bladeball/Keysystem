@@ -90,7 +90,7 @@ GetKey.MouseButton1Click:Connect(function()
 end)
 
 local function validateKey(key)
-    return key == "HubKey28" -- Replace this with your key
+    return key == "SumitHub12"
 end
 
 CheckKey.MouseButton1Click:Connect(function()
