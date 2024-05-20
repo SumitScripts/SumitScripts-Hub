@@ -1,7 +1,7 @@
 Wait(0.2)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Made by SumitScripts",
-Text = "Also Credit to My Friend LN Hub",
+Text = "developer",
 Duration = 5,
 })
 
@@ -177,7 +177,6 @@ local Player = Tab5:NewSection("Player")
 -- Credits
 local Credits = Tab6:NewSection("Made by SumitScripts")
 local Credits = Tab6:NewSection("Parry Visual By Alex")
-local Credits = Tab6:NewSection("Auto Fram Ball By LN Hub")
 -- Section information 
 -- Account details 
 local ad = Tab:NewSection("Account details")
@@ -215,50 +214,6 @@ getgenv().Paws = {
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Blade-ball-Auto-parry-Etc/main/Manual%20spam%2BAuto%20parry"))()
     print("Clicked")
-end)
-
-Combat:NewToggle("Auto Fram Ball", "credit to ln hub", function(toggled)
-            if toggled then
-                getgenv().TpToBall = true
-                local Balls = workspace.Balls
-        local Players = game:GetService("Players")
-        local LocalPlayer = Players.LocalPlayer
-        
-        local function Cycle(Character)
-            repeat
-                for _, ball in pairs(Balls:GetChildren()) do
-                    if ball.BrickColor ~= "Dark blue" and TpToBall and Character:FindFirstChild("HumanoidRootPart") then
-                        Character:FindFirstChild("HumanoidRootPart").CFrame = ball.CFrame + Vector3.new(25, 5, 0)
-                        task.wait()
-                    end
-                end
-            task.wait()
-            until not Character or not Character:FindFirstChild("Humanoid") or Character:FindFirstChild("Humanoid").Health ==  0
-        end
-        
-        LocalPlayer.CharacterAdded:Connect(Cycle);
-        Cycle(LocalPlayer.Character);
-             else
-                getgenv().TpToBall = false
-                local Balls = workspace.Balls
-        local Players = game:GetService("Players")
-        local LocalPlayer = Players.LocalPlayer
-        
-        local function Cycle(Character)
-            repeat
-                for _, ball in pairs(Balls:GetChildren()) do
-                    if ball.BrickColor ~= "Dark blue" and TpToBall and Character:FindFirstChild("HumanoidRootPart") then
-                        Character:FindFirstChild("HumanoidRootPart").CFrame = ball.CFrame + Vector3.new(0, 0, -100)
-                        task.wait()
-                    end
-                end
-            task.wait()
-            until not Character or not Character:FindFirstChild("Humanoid") or Character:FindFirstChild("Humanoid").Health ==  0
-        end
-        
-        LocalPlayer.CharacterAdded:Connect(Cycle);
-        Cycle(LocalPlayer.Character);
-             end
 end)
 
 Combat:NewToggle("Minecraft Hit Sound", "ToggleInfo", function(toggled)
