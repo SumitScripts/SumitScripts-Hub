@@ -151,8 +151,8 @@ local Sae = Tab2:NewSection("Sound And Effects")
 local Shop = Tab3:NewSection("Shop (80 Coin)")
 local World = Tab4:NewSection("World")
 local Player = Tab5:NewSection("Player")
-local Player = Tab6:NewSection("Made by SumitScripts")
-local Player = Tab6:NewSection("It Took Hours Because Full Code is some problems :( ")
+local Credits = Tab6:NewSection("Made by SumitScripts")
+local Player2 = Tab6:NewSection("It Took Hours Because Full Code is some problems :( ")
 
 -- Start
 -- Combat
