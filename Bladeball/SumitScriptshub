@@ -174,11 +174,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Blade-ba
     print("Clicked")
 end)
 
-Combat:NewToggle("Auto Play (AI)", "Automatically Play For You (Don't Use Auto Parry With This)", function(toggled)
-	resolve_parry_Remote()
-	getgenv().aura_Enabled = toggled
-end)
-
 Sae:NewToggle("hit sounds", "if you hit a ball You got Minecraft Hit Sound", function(toggled)
 	getgenv().hit_sound_Enabled = toggled
 end)
