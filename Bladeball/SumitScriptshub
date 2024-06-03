@@ -14,8 +14,8 @@ Title = "Added Many Things",
 Text = "its so op script just need a pc or good ping",
 Duration = 5,
 })
-local version = 'V.15'
-print('Luminous Loaded')
+local version = 'V.15 ReCode'
+print('SumitScripts Hub Loaded')
 print(version)
 
 setfpscap(165)
@@ -228,6 +228,10 @@ World:NewToggle("Spectate Ball", "See The Ball", function(toggled)
 end)
 
 World:NewToggle("Destroy Particles", "Delete Every Single Particles", function(toggled)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/Destroy%20Particle%20Emitters",true))()
+end)
+
+World:NewToggle("No Textures", "Delete Every Single Texture", function(toggled)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/Destroy%20Particle%20Emitters",true))()
 end)
 
